@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom"
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
@@ -9,7 +10,7 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -30,7 +31,7 @@ function App() {
           <Cart />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
