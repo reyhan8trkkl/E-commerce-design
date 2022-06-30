@@ -9,7 +9,7 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter >
       <Switch>
         <Route exact path="/">
           <Home />
